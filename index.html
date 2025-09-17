@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>Real Time Expense Tracker</h1>
+                <form>
+    <div id="search-form">
+        <div><label for="amount">Amount:</label> <br>   
+        <input type="number" id="amount" required></div>
+        <div><label for="category">Category:</label><br> 
+        <select id="category" required>
+            <option value="">Select a category</option>
+            <option value="Food">Food</option>
+            <option value="Travel">Travel</option>
+            <option value="Entertainment">Entertainment</option>
+        </select></div>
+      <div> <label for="date">Date:</label><br>
+        <input type="date" id="date" required></div>
+        
+       <div class="action"><button type="submit" id="Add" onclick="addExpense()">Add</button>
+        <button id="Search" onclick="searchExpense()">Search</button>
+        <button id="Clear" onclick="clearList()">Clear</button></div>
+    </div>
+            </form>
+
+    <div id="search-list">
+        <h2>Expense List</h2>
+        <table id="expense-list"></table> 
+    </div>  
+
+    <div id="chart-div">
+        <canvas id="chart">
+            <p>Your browser does not support canvas.</p>
+        </canvas>
+    </div>
+
+    <footer><div class="copy">By Tobi Adeoye &copy; 2025 Real Time Expense Tracker v1.0</div></div></footer>
+  
+
+        <script src="app.js"></script>
+</body>
+</html>

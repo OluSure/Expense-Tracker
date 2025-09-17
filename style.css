@@ -1,0 +1,69 @@
+h1 {
+    color: rgb(167, 128, 128);
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+#search-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 30px;
+    background-color: rgb(213, 193, 233);
+    border-radius: 5px;
+}
+#search-form input, select {
+    width: 70%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.action button {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(167, 128, 128);
+    color: white;
+    margin: 3px;
+
+}
+#search-list {
+    background-color: rgb(213, 193, 233);
+    padding: 10px;
+    border-radius: 5px;
+}
+#search-item {
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.action {
+    display: inline-block;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+th {
+    background-color: rgb(167, 128, 128);
+    color: white;
+}
+.copy {
+    margin-top: 10px;
+    text-align: center;
+    font-size: large;
+    color: rgb(167, 128, 128);
+}
